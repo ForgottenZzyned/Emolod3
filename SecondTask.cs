@@ -51,6 +51,9 @@ internal class Emolod2
                 }
                 else Console.WriteLine("There is no contacts in your dictionary");          
                 break;
+            default:
+                Console.WriteLine("Incorrect index of operation");
+                break;
         }
     }
 }
