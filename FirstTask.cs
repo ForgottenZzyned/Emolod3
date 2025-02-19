@@ -117,6 +117,9 @@ internal class Emolod2
                 list.RemoveAt(index-1);
                 Console.WriteLine("Successfully removed value");
                 break;
+            default:
+                Console.WriteLine("Incorrect index of operation");
+                break;
         }
     }
 
