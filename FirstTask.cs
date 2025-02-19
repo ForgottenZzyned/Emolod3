@@ -65,17 +65,8 @@ internal class Emolod2
                     if (Console.ReadLine().ToString() == "yes") s.Add(engSymbolsUpper);
                     Console.WriteLine("Would you like to add numbers to your list? yes/no");
                     if (Console.ReadLine().ToString() == "yes") s.Add(numbers);
-
-                    string[] strMassive = s.ToArray();
-                    List<char> chars = new List<char>();
-                    foreach (string str in strMassive)
-                    {
-                        foreach (char c in str)
-                        {
-                            chars.Add(c);
-                        }
-                    }
-                    string newSymbols = new string(chars.ToArray());
+                    
+                    string newSymbols = string.Join("", s);
                     for (int i = 0; i < quantity; i++)
                     {
                         char[] randomStr = new char[random.Next(minLength, maxlength)];
