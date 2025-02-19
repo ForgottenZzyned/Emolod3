@@ -21,7 +21,7 @@ internal class Emolod2
     static void Crud(int indexOfOp)
     {
         int index = -1;
-        if(list.Count <= 0 && indexOfOp != 1)
+        if(list.Count <= 0 && indexOfOp >= 0 && indexOfOp <= 4)
         {
             indexOfOp = 1;
             Console.WriteLine("You don't have list yet, we need to do new");
